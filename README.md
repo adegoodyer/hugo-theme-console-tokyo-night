@@ -1,74 +1,48 @@
-# Hugo Theme: Console
+# hugo-theme-console-tokyo-night
 
-A minimal and responsive Hugo theme inspired by the system console, crafted for optimal performance with an average page load time of under one second.
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-donate-yellow)](https://www.buymeacoffee.com/adegoodyer)
 
-Theme is based on a modern and minimal [Terminal CSS](https://terminalcss.xyz/) framework. 
-
-![Console](https://github.com/mrmierzejewski/hugo-theme-console/blob/master/images/preview.png?raw=true)
-
-## Live demo
-
-* [https://mrmierzejewski.com/hugo-theme-console/](https://mrmierzejewski.com/hugo-theme-console/)
+Minimal terminal styled Hugo theme with colour scheme based on Tokyo Night.
 
 ## Installation
+```bash
+# create new Hugo site
+hugo new site example.com
 
-From the root of your Hugo site, clone the theme into ```themes/hugo-theme-console``` by running :
+# add theme
+git submodule add https://github.com/adegoodyer/hugo-theme-console-tokyo-night.git example.com/themes/hugo-theme-console-tokyo-night
 
-```
-$ git submodule add https://github.com/mrmierzejewski/hugo-theme-console.git hugo-theme-console
-```
-    
-See the [Hugo documentation](https://gohugo.io/hugo-modules/theme-components/) for more information.
+# commit submodule
+git add .gitmodules example.com/themes/hugo-theme-console-tokyo-night && \
+git commit -m "Added theme submodule"
 
-## Configuration
+# update theme
+git submodule update --remote --merge
 
-Set theme parameter in your config file:
-
-```
-theme = "hugo-theme-console"
-```
-
-## Quick start
-
-After installation, take a look in the `exampleSite` folder at. This directory contains an example config file and the content for the demo.
-
-```
-  exampleSite
-  ├── config.toml
-  ├── content
-  │   ├── about
-  │   │   └── index.md
-  │   └── photos
-  │   │   └── arizona-us
-  │   │       ├── arizona-us.jpg
-  │   │       └── index.md
-  │   └── posts
-  │       └── introduction
-  │           └── index.md
-  ├── layouts
-  │
-  └── static
+# add theme to `hugo.toml`
+theme = "hugo-theme-console-tokyo-night"
 ```
 
-Copy at least the `config.toml` in the root directory of your website. Overwrite the existing config file if necessary.
+## Tags
 
-Hugo includes a development server, so you can view your changes as you go -
-very handy. Spin it up with the following command:
+- `latest`: Most recent stable build
+- `x.y.z`: Specific version builds (e.g., `2.7.5`)
+- `x.y`: Minor version builds (e.g., `2.7`)
 
-```
-hugo serve
-```
+## Contributing
 
-Now you can go to [http://localhost:1313](http://localhost:1313) and the theme should be visible.
-
-## Example Site
-
-To run the example site, please type the following command.
-
-```
-make hugo-server
-```
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
 
 ## License
 
-Copyright &copy; 2024 [Marcin Mierzejewski](https://mrmierzejewski.com/). This theme is released under the [MIT License](https://github.com/panr/hugo-theme-terminal/blob/master/LICENSE.md).
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Acknowledgments
+- [terminalcss.xyz](https://terminalcss.xyz/)
+- [Jonas D](https://github.com/Gioni06/terminal.css)
+- [Marcin Mierzejewski](https://github.com/mrmierzejewski)
